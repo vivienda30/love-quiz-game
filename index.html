@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Quiz for Dane 💖</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio autoplay loop>
+        <source src="https://www.example.com/die_with_a_smile.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Passcode Screen -->
+    <div class="passcode-screen">
+        <p>Enter Passcode: <span class="hint">💡 (Hint: *4 digit tanggal lahir aku)</span></p>
+        <div class="passcode-grid">
+            <button onclick="enterDigit('3')">3</button>
+            <button onclick="enterDigit('0')">0</button>
+            <button onclick="enterDigit('1')">1</button>
+            <button onclick="enterDigit('2')">2</button>
+            <button onclick="enterDigit('5')">5</button>
+            <button onclick="enterDigit('7')">7</button>
+            <button onclick="enterDigit('8')">8</button>
+            <button onclick="enterDigit('9')">9</button>
+        </div>
+        <button onclick="checkPasscode()">Unlock</button>
+    </div>
+
+    <!-- Quiz Container -->
+    <div class="container hidden">
+        <h1 id="question"></h1>
+        <img id="questionImage" src="" alt="Question Image" class="rounded-img">
+        <div id="options"></div>
+        <button id="nextBtn" onclick="nextQuestion()">Next</button>
+    </div>
+
+    <!-- Envelope Screen -->
+    <div class="envelope-screen hidden">
+        <div class="envelope" onclick="openEnvelope()">
+            <p>📩 Click to Open</p>
+        </div>
+        <div class="message hidden">
+            <p>Dane sayang, Happy buka puasa! 🌙💖</p>
+            <p>Semangat kuliahnya ya, jangan males-malesan, tapi kalau capek istirahat juga 😆</p>
+            <p>Aku selalu support kamu! 😘</p>
+            <p>From: VV 💌</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
