@@ -1,6 +1,6 @@
 body {
     font-family: 'Patrick Hand', cursive;
-    background-color: #ffc0cb;
+    background-color: #FFF8DB;
     text-align: center;
     padding: 20px;
 }
@@ -13,23 +13,66 @@ body {
     margin-top: 50px;
 }
 
+.passcode-grid {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
 .passcode-grid button {
-    width: 50px;
-    height: 50px;
-    margin: 5px;
-    font-size: 20px;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
     border-radius: 50%;
+    background-color: #FFC7ED;
+    border: none;
+    cursor: pointer;
+}
+
+.passcode-screen button {
+    margin-top: 20px;
+    background-color: #7D8ABC;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
 }
 
 .container {
     margin-top: 20px;
 }
 
-.rounded-img {
-    width: 200px;
-    height: 200px;
-    border-radius: 20px;
-    margin-bottom: 10px;
+#question {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#options {
+    margin-top: 20px;
+}
+
+#options button {
+    background-color: #304463;
+    border-radius: 12px;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+#nextBtn {
+    background-color: #7D8ABC;
+    color: white;
+    border-radius: 12px;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin-top: 30px;
+    border: none;
+    cursor: pointer;
 }
 
 .envelope-screen {
@@ -37,18 +80,28 @@ body {
 }
 
 .envelope {
-    background: url('https://example.com/envelope.png'); /* Ganti dengan URL gambar amplop */
-    width: 200px;
-    height: 150px;
+    width: 150px;
+    height: 100px;
+    background: url('https://example.com/envelope.png');
     margin: auto;
     cursor: pointer;
 }
 
 .message {
-    background: white;
+    background-color: white;
     padding: 20px;
     border-radius: 10px;
     width: 300px;
     margin: auto;
     font-size: 18px;
+    margin-top: 20px;
+}
+
+.hint {
+    font-size: 14px;
+    color: #7D8ABC;
+}
+
+#nextBtn:hover, .passcode-screen button:hover, #options button:hover {
+    background-color: #304463;
 }
